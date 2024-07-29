@@ -1,7 +1,14 @@
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import { useDispatch } from 'react-redux'
+import { costumerReservationAction } from '../store/costumerSlice'
+// import { FileParser } from '../utils/fileParser' ako budem ubacivao fajl ili sliku da se moze iskoristiti
+
+
 
 function ReservationPage() {
+
+  const dispatch = useDispatch()
 
   const formik = useFormik({
     // initialValues
@@ -12,7 +19,8 @@ function ReservationPage() {
       phoneNumber: '',
       date: '',
       time:  '',
-      guests: ''
+      guests: '',
+      
     },
     // Validacija
     validationSchema: Yup.object({
@@ -27,6 +35,13 @@ function ReservationPage() {
     // Submit Form
     onSubmit: (values) => {
       console.log(values)
+
+
+     // FileParser(values) ako budem ubacivao fajl ili sliku da se moze iskoristiti
+       // .then(response => {
+          dispatch(costumerReservationAction({...values}))
+     //   })
+       // .catch(error => console.log(error))
 
       formik.resetForm()
     }

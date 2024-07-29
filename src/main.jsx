@@ -11,6 +11,8 @@ import AboutPage from './pages/AboutPage.jsx'
 import ReservationPage from './pages/ReservationPage.jsx'
 import ErrorPage from './pages/ErrorPage.jsx' 
 import SingleRecipesPage from './pages/SingleRecipesPage.jsx'
+import { Provider } from 'react-redux'
+import store from './store/store' 
 // Rutiranje
 //1 Kreiranje
 const router = createBrowserRouter([
@@ -46,6 +48,8 @@ const router = createBrowserRouter([
 //Provajder
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>,
 )
