@@ -27,6 +27,8 @@ function ReservationPage() {
     // Submit Form
     onSubmit: (values) => {
       console.log(values)
+
+      formik.resetForm()
     }
   })
 
