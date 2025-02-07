@@ -17,7 +17,7 @@ function HomePage() {
       <h2 className='text-3xl font-bold p-5 text-blue-900 text-center'>Our Menu</h2>
       <p className='text-2xl p-4 text-yellow-900'>Explore a menu that honors the culinary legacy of our ancestors. From hearty soups and stews to delectable main courses and mouthwatering desserts, every bite tells a story of passion and dedication. Our chefs are devoted to preserving the authenticity of each recipe while adding their own creative touch.</p>
 
-      <h2 className='text-3xl font-bold p-5 text-blue-900 text-center'>A Cozy Ambience</h2>
+      <h2 className='text-3xl font-bold p-5 text-red-900 underline text-center'>A Cozy Ambience</h2>
       <p className='text-2xl p-4 text-yellow-900'>Our restaurant is designed to make you feel at home. With a cozy and rustic decor that evokes the charm of yesteryears, you can relax and enjoy your meal in a setting that feels both familiar and special. Whether you’re here for a casual lunch, a family dinner, or a special occasion, our welcoming staff will ensure your experience is nothing short of exceptional.</p>
 
       <h2 className='text-3xl font-bold p-5 text-blue-900 text-center'>Join Us</h2>
